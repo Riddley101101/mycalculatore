@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Calculator';
+    src: url('../fonts/Calculator.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Calculator;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+span {
+    cursor: pointer;
+}
+
+body {
+    font-size: 40px;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    position: relative;
+    flex-basis: 300px;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(68, 68, 68);
+
+}
+.calculator-box {
+    display: flex;
+}
+.calculator__result {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 100px;
+    width: 30px;
+    background-color: rgb(146, 56, 56);
+}
+.calculator__result p {
+    padding: 4px 0;
+    writing-mode:vertical-rl;
+    font-size: 20px;
+}
+
+.input input {
+    width: 260px;
+    height: 75px;
+    background-color: rgb(48, 48, 48);
+}
+
+.input__result {
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    text-align: right;
+    padding: 20px 10px;
+}
+
+.input__result::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.calculator__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+}
+.calculator__button {
+    background-color: rgb(46, 46, 46);
+  
+}
+
+.calculator__button span {
+    padding: 0 20px;
+  
+}
+.calculator__buttons-number {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    padding-bottom: 15px;
+    justify-content: center;
+   
+}
+
+.calculator__math {
+    display: flex;
+    
+  
+
+}
+
+.calculator__buttons-math {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 10px;
+}
+
+.calculator__button-math {
+    background-color: rgb(36, 36, 36);
+    align-items: center;
+    
+}
+.calculator__button-math span {
+   font-size: 35px;
+   padding: 0 18px;
+    
+}
+
